@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description">This is the student survey form. Please fill out this survey to enjoy our services.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name (required):</label>
+      <input
+       id="name" 
+       type="text"
+       name="name" 
+       Placeholder="e.g, John Doe" required>
+
+      <label for="email" id="email-label">Email Address (required):</label>
+      <input id="email" 
+      type="email" 
+      name="email" 
+      value="email" placeholder="example@email.com" required 
+      size="20">
+
+      <label for="number" id="number-label">Age (optional):</label>
+      <input 
+      id="number" 
+      type="number" 
+      name="age" 
+      min="10" 
+      max="100" 
+      placeholder="18">
+      
+      <br></br>
+      <label for="dropdown">Current Education Level?</label>
+      <select id="dropdown">
+        <option value="school">School</option>
+        <option value="college">College</option>
+        <option value="university">University</option>
+        </select>
+
+        <br></br>
+        <p>Would you recommend our platform?</p>
+        <input
+        type="radio"
+        name="recommend"
+        value="yes"
+        id="yes">
+        <label for="yes">Yes</label>
+
+        <input
+        type="radio"
+        name="recommend"
+        id="no"
+        value="no">
+        <label for="no">No</label>
+
+        <p>What features do you like?</p>
+
+        <input
+        type="checkbox"
+        value="courses"
+        id="courses">
+        <label for="courses">Courses</label>
+
+        <br></br>
+        <input
+        type="checkbox"
+        value="teachers"
+        id="teachers">
+        <label for="teachers">Teachers</label>
+
+        <br></br>
+
+        <input
+        type="checkbox"
+        id="support"
+        value="support">
+        <label for="support">Support
+        </label>
+
+        <br></br>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea 
+         id="comments"
+         rows="5"
+         cols="30"
+         placeholder="Write your comments here">
+         </textarea>
+         <button 
+         id="submit"
+         type="submit">
+         Submit
+         </button>
+    </form>
+  </body>
+</html>
